@@ -9,8 +9,8 @@ save_path="$home_dir/checkpoints/$project_name/$exp_name"
 mkdir -p $save_path
 
 MODEL_PATH="$home_dir/checkpoints/STaR/STaR-Qwen3-8B-SFT-Stage1/global_step_20/actor/huggingface"
-TRAIN_FILE="$home_dir/data/final/STaR-tqa-train-hard.parquet"
-TEST_FILE="$home_dir/data/final/STaR-tqa-test-addfinqa.parquet"
+TRAIN_FILE="$home_dir/data/final/STaR-train-hard.parquet"
+TEST_FILE="$home_dir/data/final/STaR-test-addfinqa.parquet"
 
 max_prompt_length=$((1024 * 8))
 max_response_length=$((1024 * 4))

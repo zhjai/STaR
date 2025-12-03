@@ -9,8 +9,8 @@ save_path="$home_dir/checkpoints/$project_name/$exp_name"
 mkdir -p $save_path
 
 MODEL_PATH="$home_dir/checkpoints/STaR/STaR-Qwen3-0.6B-SFT/global_step_273"
-TRAIN_FILE="$home_dir/data/STaR-tqa-train-easy.parquet"
-TEST_FILE="$home_dir/data/STaR-tqa-test.parquet"
+TRAIN_FILE="$home_dir/data/STaR-train-easy.parquet"
+TEST_FILE="$home_dir/data/STaR-test.parquet"
 
 max_prompt_length=$((1024 * 8))
 max_response_length=$((1024 * 4))

@@ -11,7 +11,7 @@ MAX_LENGTH=4096
 TP_SIZE=4
 
 home_dir='STaR'
-TEST_FILE="$home_dir/data/STaR-tqa-eval.parquet"
+TEST_FILE="$home_dir/data/STaR-eval.parquet"
 
 for MODEL_PATH in "${MODEL_PATHS[@]}"; do
     OUTPUT_DIR="$home_dir/results/$MODEL_PATH"

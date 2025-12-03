@@ -9,8 +9,8 @@ save_path="$home_dir/checkpoints/$project_name/$exp_name"
 mkdir -p $save_path
 
 MODEL_PATH="$home_dir/model/qwen3-0.6b"
-TRAIN_FILE="$home_dir/data/STaR-tqa-sft-addfinqa.parquet"
-TEST_FILE="$home_dir/data/STaR-tqa-sft-addfinqa.parquet"
+TRAIN_FILE="$home_dir/data/STaR-sft.parquet"
+TEST_FILE="$home_dir/data/STaR-sft.parquet"
 
 torchrun --standalone --nnodes=1 --nproc_per_node=2 \
      -m verl.trainer.fsdp_sft_trainer \
