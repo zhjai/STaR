@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="STaR.jpg" alt="STaR Logo" width="420"/>
+<img src="STaR.png" alt="STaR Logo" width="420"/>
 
 # ⭐ STaR: Slow-Thinking for Table Reasoning
 
