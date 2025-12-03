@@ -5,7 +5,7 @@
 # ⭐ STaR: Slow-Thinking for Table Reasoning
 
 [![arXiv](https://img.shields.io/badge/arXiv-2511.11233-b31b1b.svg?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2511.11233)
-[![Hugging Face Datasets](https://img.shields.io/badge/🤗%20Datasets-STaR--Datasets-ffd21e?style=flat-square)](https://huggingface.co/datasets/zhjai/STaR-Datasets)
+[![Hugging Face Datasets](https://img.shields.io/badge/🤗%20Datasets-STaR--Datasets-ff8c00?style=flat-square)](https://huggingface.co/datasets/zhjai/STaR-Datasets)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
 
 **A Cognitive Framework for Table Reasoning with LLMs**
@@ -91,7 +91,7 @@ Download the datasets from Hugging Face and place them in the `data/` folder:
 
 | Dataset | Description | Link |
 |---------|-------------|------|
-| STaR-Datasets | Full training & evaluation data | [![Hugging Face](https://img.shields.io/badge/🤗-Datasets-ffd21e)](https://huggingface.co/datasets/zhjai/STaR-Datasets) |
+| STaR-Datasets | Full training & evaluation data | [![Hugging Face](https://img.shields.io/badge/🤗-Datasets-ff8c00)](https://huggingface.co/datasets/zhjai/STaR-Datasets) |
 
 ### 🤖 Base Models
 
@@ -99,8 +99,17 @@ Download the base models and place them in the `model/` folder:
 
 | Model | Parameters | Link |
 |-------|------------|------|
-| Qwen3-0.6B | 0.6B | [![Hugging Face](https://img.shields.io/badge/🤗-Qwen3--0.6B-ffd21e)](https://huggingface.co/Qwen/Qwen3-0.6B) |
-| Qwen3-8B | 8B | [![Hugging Face](https://img.shields.io/badge/🤗-Qwen3--8B-ffd21e)](https://huggingface.co/Qwen/Qwen3-8B) |
+| Qwen3-0.6B | 0.6B | [![Hugging Face](https://img.shields.io/badge/🤗-Qwen3--0.6B-ff8c00)](https://huggingface.co/Qwen/Qwen3-0.6B) |
+| Qwen3-8B | 8B | [![Hugging Face](https://img.shields.io/badge/🤗-Qwen3--8B-ff8c00)](https://huggingface.co/Qwen/Qwen3-8B) |
+
+### 🏆 Trained Checkpoints
+
+Our trained model weights are available on Hugging Face:
+
+| Model | Parameters | Link |
+|-------|------------|------|
+| STaR-0.6B | 0.6B | [![Hugging Face](https://img.shields.io/badge/🤗-STaR--0.6B-ff8c00)](https://huggingface.co/zhjai/STaR-0.6B) |
+| STaR-8B | 8B | [![Hugging Face](https://img.shields.io/badge/🤗-STaR--8B-ff8c00)](https://huggingface.co/zhjai/STaR-8B) |
 
 ---
 
