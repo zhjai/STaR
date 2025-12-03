@@ -6,7 +6,6 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2511.11233-b31b1b.svg?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2511.11233)
 [![Hugging Face Datasets](https://img.shields.io/badge/🤗%20Datasets-STaR--Datasets-ffd21e?style=flat-square)](https://huggingface.co/datasets/zhjai/STaR-Datasets)
-[![Python 3.10](https://img.shields.io/badge/Python-3.10-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
 
 **A Cognitive Framework for Table Reasoning with LLMs**
@@ -129,7 +128,7 @@ bash sh/STaR-sft-stage1-qwen3-0.6b.sh
 bash sh/STaR-sft-stage1-qwen3-8b.sh
 ```
 
-### 🔥 Stage 2: GRPO (All Samples)
+### 🔥 Stage 2: GRPO (Hard Samples)
 
 ```bash
 # Qwen3-0.6B
