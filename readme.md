@@ -1,14 +1,16 @@
+[English](readme.md) | [中文](readme_cn.md)
+
 <div align="center">
 
 <img src="STaR.png" alt="STaR Logo" width="420"/>
 
-# ⭐ STaR: Slow-Thinking for Table Reasoning
+# ⭐ STaR: Towards Effective and Stable Table Reasoning via Slow-Thinking Large Language Models
 
 [![arXiv](https://img.shields.io/badge/arXiv-2511.11233-b31b1b.svg?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2511.11233)
 [![Hugging Face Datasets](https://img.shields.io/badge/🤗%20Datasets-STaR--Datasets-ff8c00?style=flat-square)](https://huggingface.co/datasets/zhjai/STaR-Datasets)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
 
-**A Cognitive Framework for Table Reasoning with LLMs**
+**A Novel Slow-Thinking Model for Effective and Stable Table Reasoning**
 
 [📄 Paper](https://arxiv.org/abs/2511.11233) • [🤗 Datasets](https://huggingface.co/datasets/zhjai/STaR-Datasets) • [🏠 GitHub](https://github.com/zhjai/STaR)
 
@@ -22,22 +24,22 @@
 <img src="star-framework.png" alt="STaR Framework" width="90%"/>
 </div>
 
-**STaR** (Slow-Thinking for Table Reasoning) is a novel framework that equips LLMs with slow-thinking capabilities for cognitive table reasoning by explicitly modeling step-by-step thinking and uncertainty-aware inference.
+**STaR** (Slow-Thinking Table Reasoning) is a novel slow-thinking model that can achieve effective and stable table reasoning. It enables effective multi-step reasoning through a two-stage training framework (SFT + RFT) and improves reasoning stability via trajectory-level uncertainty quantification.
 
 ### ✨ Key Features
 
-- 🧠 **Cognitive Reasoning**: Mimics human-like iterative and reflective thought processes
-- 📈 **Two-Stage DRL**: Difficulty-aware reinforcement learning from simple to complex queries
-- 🎯 **Uncertainty Quantification**: Trajectory-level confidence for reliable reasoning paths
-- 🚀 **Strong Generalization**: Excellent out-of-domain performance
+- 🧠 **Effective Multi-Step Reasoning**: Two-stage training framework with SFT warm-up and reinforced fine-tuning (RFT)
+- 📈 **Difficulty-Aware RL**: Reinforcement learning mechanism that progressively handles complex reasoning
+- 🎯 **Stable Reasoning**: Trajectory-level uncertainty quantification fusing token-level confidence with answer-level consistency
+- 🚀 **Strong Generalization**: State-of-the-art in-domain performance and excellent out-of-domain generalization
 
 ---
 
 ## 📋 Abstract
 
-Table reasoning with large language models (LLMs) is a fundamental path toward building intelligent systems that can understand and analyze structured data. While recent progress has shown promising results, they still suffer from two key limitations: (i) the reasoning processes lack the depth and iterative refinement characteristic of human cognition; and (ii) the reasoning processes exhibit instability, which compromises their reliability in downstream applications. 
+Table reasoning with large language models (LLMs) plays a critical role in building intelligent systems capable of understanding and analyzing tabular data. Despite recent progress, existing methods still face key limitations: their reasoning processes lacks depth and explicit multi-step reasoning, often relying solely on implicit language model understanding. In addition, their reasoning processes suffer from instability, primarily caused by model uncertainty.
 
-In this work, we present **STaR**, a new framework achieving cognitive table reasoning, in which LLMs are equipped with slow-thinking capabilities by explicitly modeling step-by-step thinking and uncertainty-aware inference. During training, STaR employs **two-stage difficulty-aware reinforcement learning (DRL)**, progressively learning from simple to complex queries under a composite reward. During inference, STaR performs **trajectory-level uncertainty quantification** by integrating token-level confidence and answer consistency, enabling selection of more credible reasoning paths.
+In this work, we propose **STaR**, a novel slow-thinking model that can achieve effective and stable table reasoning. To enable effective multi-step reasoning, we design a **two-stage training framework** consisting of supervised fine-tuning (SFT) warm-up followed by reinforced fine-tuning (RFT). Specifically, in the SFT stage, we construct a high-quality dataset through automatic self-verification. In the RFT stage, we introduce a **difficulty-aware reinforcement learning mechanism** to further enhance reasoning capabilities. Furthermore, to improve reasoning stability, we introduce **trajectory-level uncertainty quantification**, which fuses token-level confidence with answer-level consistency, enabling the selection of better reasoning trajectories. Extensive experiments demonstrate that STaR-8B achieves state-of-the-art performance on in-domain benchmarks and exhibits strong generalization to out-of-domain datasets, highlighting its potential for enhancing both effectiveness and stability in table reasoning.
 
 ---
 
@@ -117,7 +119,7 @@ Our trained model weights are available on Hugging Face:
 
 Training scripts are located in the `sh/` directory. Adjust paths and hyperparameters as needed.
 
-### 📚 Stage 0: Supervised Fine-Tuning (SFT)
+### 📚 Stage 1: Supervised Fine-Tuning (SFT)
 
 ```bash
 # Qwen3-0.6B
@@ -127,7 +129,7 @@ bash sh/STaR-sft-qwen3-0.6b.sh
 bash sh/STaR-sft-qwen3-8b.sh
 ```
 
-### 🎯 Stage 1: GRPO (Easy Samples)
+### 🎯 Stage 2: Reinforced Fine-Tuning (RFT) - Foundational Training
 
 ```bash
 # Qwen3-0.6B
@@ -137,7 +139,7 @@ bash sh/STaR-sft-stage1-qwen3-0.6b.sh
 bash sh/STaR-sft-stage1-qwen3-8b.sh
 ```
 
-### 🔥 Stage 2: GRPO (Hard Samples)
+### 🔥 Stage 2: Reinforced Fine-Tuning (RFT) - Progressive Training
 
 ```bash
 # Qwen3-0.6B
@@ -169,14 +171,7 @@ python eval-by-trajectory.py
 
 If you find this work useful, please cite our paper:
 
-```bibtex
-@article{zhang2025star,
-  title={STaR: Towards Cognitive Table Reasoning via Slow-Thinking Large Language Models},
-  author={Zhang, Huajian and Cheng, Mingyue and Luo, Yucong and Tao, Xiaoyu},
-  journal={arXiv preprint arXiv:2511.11233},
-  year={2025}
-}
-```
+> **Note:** The citation on Google Scholar may still display the old title. The correct title is: *STaR: Towards Effective and Stable Table Reasoning via Slow-Thinking Large Language Models*
 
 ---
 
