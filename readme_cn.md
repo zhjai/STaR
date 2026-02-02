@@ -7,12 +7,12 @@
 # ⭐ STaR: Towards Effective and Stable Table Reasoning via Slow-Thinking Large Language Models
 
 [![arXiv](https://img.shields.io/badge/arXiv-2511.11233-b31b1b.svg?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2511.11233)
-[![Hugging Face Datasets](https://img.shields.io/badge/🤗%20Datasets-STaR--Datasets-ff8c00?style=flat-square)](https://huggingface.co/datasets/zhjai/STaR-Datasets)
+[![Hugging Face Datasets](https://img.shields.io/badge/🤗%20Datasets-STaR--Datasets-yellow?style=flat-square)](https://huggingface.co/datasets/zhjai/STaR-Datasets)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
 
 **一种用于有效且稳定表格推理的慢思考模型**
 
-[📄 论文](https://arxiv.org/abs/2511.11233) • [🤗 数据集](https://huggingface.co/datasets/zhjai/STaR-Datasets) • [🏠 GitHub](https://github.com/zhjai/STaR)
+[📄 论文](https://arxiv.org/abs/2511.11233) • [🤗 数据集](https://huggingface.co/datasets/zhjai/STaR-Datasets) • [🏠 代码](https://github.com/zhjai/STaR)
 
 </div>
 
@@ -93,7 +93,7 @@ cd ..
 
 | 数据集 | 描述 | 链接 |
 |---------|-------------|------|
-| STaR-Datasets | 完整训练和评估数据 | [![Hugging Face](https://img.shields.io/badge/🤗-Datasets-ff8c00)](https://huggingface.co/datasets/zhjai/STaR-Datasets) |
+| STaR-Datasets | 完整训练和评估数据 | [![Hugging Face](https://img.shields.io/badge/🤗-Datasets-yellow)](https://huggingface.co/datasets/zhjai/STaR-Datasets) |
 
 ### 🤖 基础模型
 
@@ -101,8 +101,8 @@ cd ..
 
 | 模型 | 参数量 | 链接 |
 |-------|------------|------|
-| Qwen3-0.6B | 0.6B | [![Hugging Face](https://img.shields.io/badge/🤗-Qwen3--0.6B-ff8c00)](https://huggingface.co/Qwen/Qwen3-0.6B) |
-| Qwen3-8B | 8B | [![Hugging Face](https://img.shields.io/badge/🤗-Qwen3--8B-ff8c00)](https://huggingface.co/Qwen/Qwen3-8B) |
+| Qwen3-0.6B | 0.6B | [![Hugging Face](https://img.shields.io/badge/🤗-Qwen3--0.6B-yellow)](https://huggingface.co/Qwen/Qwen3-0.6B) |
+| Qwen3-8B | 8B | [![Hugging Face](https://img.shields.io/badge/🤗-Qwen3--8B-yellow)](https://huggingface.co/Qwen/Qwen3-8B) |
 
 ### 🏆 训练好的检查点
 
@@ -110,8 +110,8 @@ cd ..
 
 | 模型 | 参数量 | 链接 |
 |-------|------------|------|
-| STaR-0.6B | 0.6B | [![Hugging Face](https://img.shields.io/badge/🤗-STaR--0.6B-ff8c00)](https://huggingface.co/zhjai/STaR-0.6B) |
-| STaR-8B | 8B | [![Hugging Face](https://img.shields.io/badge/🤗-STaR--8B-ff8c00)](https://huggingface.co/zhjai/STaR-8B) |
+| STaR-0.6B | 0.6B | [![Hugging Face](https://img.shields.io/badge/🤗-STaR--0.6B-yellow)](https://huggingface.co/zhjai/STaR-0.6B) |
+| STaR-8B | 8B | [![Hugging Face](https://img.shields.io/badge/🤗-STaR--8B-yellow)](https://huggingface.co/zhjai/STaR-8B) |
 
 ---
 
